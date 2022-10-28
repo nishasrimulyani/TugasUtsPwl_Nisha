@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .nav-item {
+            padding-right: 50px;
+        }
+
+        .carousel-item {
+            height: 100vh;
+        }
+
+        section#info {
+            padding:50px 0px;
+        }
+
+        section#about{
+            padding-bottom:50px;
+            background-color: beige;
+        }
+
+        section#review{
+            padding-bottom:50px;
+            background-color: beige;
+        }
+
+        p {
+            text-align:center !important;
+        }
+
+        .nav-link{
+            color: black;
+        }
+
+        .img-rounded-custom{
+            max-width: 50%;
+            height: auto;
+            border: 8px solid #fff;
+            align-content: center;
+            box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
+        }
+
+        td{
+            padding-top: 15px;
+            font-size: 20px;
+        }
+
+
+
+    </style>
+
+    </head>
+  <body>
+    <nav id="navbar-custom" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="C:\Semesteer5\PWL\Web Profile\8.png" width="100" height="100"  alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- HOME -->
+    <section id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="C:\Semesteer5\PWL\Web Profile\3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="C:\Semesteer5\PWL\Web Profile\5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="C:\Semesteer5\PWL\Web Profile\4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+    <!-- INFORMATION -->
+    <section id="info">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center" style="padding-bottom:30px;">Information</h1>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="C:\Semesteer5\PWL\Web Profile\teacher.png" width="60" height="60" alt="...">
+                <h3>Tentang Pengajar</h3>
+                <p>Pengajar kami merupakan lulusan Sekolah Bahasa Korea di Korea Selatan.</p>
+            </div>
+            <div class="col">
+                <img src="C:\Semesteer5\PWL\Web Profile\calendar.png" width="50" height="50" alt="...">
+                <h3>Jadwal Kursus</h3>
+                <p>Pelaksaan kursus dilaksanan seminggu 3 dengan bonus 1 pertemuan awal. Jadwal dilakukan secara fleksibel disesuaikan dengan jadwal pelajar dan pengajar.</p> 
+            </div>
+            <div class="col">
+                <img src="C:\Semesteer5\PWL\Web Profile\instruction.png" width="55" height="55" alt="...">
+                <h3>Metode Pembelajaran</h3>
+                <p>Metode pembelajaran dilakasanakan secara online via zoom atau google meet. Kurikulum yang digunakan sesuai dengan kurikulum asli yang pernah dipelajari pengajar sewaktu belajar di Korea Selatan.</p>
+            </div>
+        </div>
+
+        <!--promotion-->
+            <div class="row" style="padding-top:30px; padding-bottom: 30px;">
+                <div class="col-md-12">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;">BEST KOREAN COURSE</h3>
+                            <p class="card-text">Lembaga Kursus Bahasa Korea Online terbaik di 2022. Metode pembelajaran yang interaktif dan menyenangkan membuat lebih percaya diri berbicara Bahasa Korea. Tunggu apalagi ayo gabung bersama kami di HANGGUKMAL. </p>
+                            <a href="#regis" class="btn btn-primary" style="">Daftar Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--about-->
+    <section id="about">
+        <div class="container">
+            <h1 class="text-center" style="padding-top:30px;">About Me</h1>
+            <div class="row" style="padding-bottom:50px">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="C:\Semesteer5\PWL\Web Profile\nisha2.jpg" class="img-rounded mx-auto d-block img-rounded-custom"/>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 style="padding-top:30px;">Hai Guys !!!</h3>
+                    <h5>Perkenalkan saya seorang mahasiswi Teknik Informatika yang memiliki pengalaman belajar Bahasa Korea di Ajou University Korea Selatan selama 1 tahun dari 2018-2019. Berikut ringkasan data diri saya :  </h5>
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td> :</td>
+                            <td> Nisha Sri Mulyani</td>
+                        </tr>
+                        <tr>
+                            <td>Umur</td>
+                            <td> :</td>
+                            <td> 22 tahun</td>
+                        </tr>
+                        <tr>
+                            <td>Pengalaman</td>
+                            <td> :</td>
+                            <td> 1,5 tahun</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td> :</td>
+                            <td> Sukalarang, Sukabumi</td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td> :</td>
+                            <td> nishasrimulyani@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td> :</td>
+                            <td> 081282370550</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--formulir-->
+    <section id="regis">
+        <div class="row" style="padding-top:30px; padding-bottom: 30px;">
+            <div class="col-md-12">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center; padding-top: 30px;">Register</h1>
+                    <form class="row g-3" style="padding-left:150px;padding-right:150px; padding-top: 30px; padding-bottom: 30px;">
+                        <div class="col-md-6">
+                          <label for="inputNamaDepan" class="form-label">Nama Depan</label>
+                          <input type="text" class="form-control" id="inputNamaDepan">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputNamaBel" class="form-label">Nama Belakang</label>
+                          <input type="text" class="form-control" id="inputNamaBel">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNoTelp" class="form-label">No Hp</label>
+                            <input type="text" class="form-control" id="inputNoTelp">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Alamat</label>
+                          <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="d-grid gap-2 col-4 mx-auto">
+                            <button class="btn btn-primary" type="button">Daftar</button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Review-->
+    <section id="review">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center" style="padding-top:30px;">Review</h1>
+            <div class="row" style="padding-top:30px;">
+                <div class="col-md-4">
+                    <div class="card" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Idzni Zhahrina</h5>
+                            <p class="card-text">Anak saya, Kirana, sangat senang belajar dengan Kak Nisha. Kak Nisha ngajarinnya sabar banget & asyik banget diajak ngobrol katanya. Pelajaran yang disampaikan juga mudah dimengerti, disesuaikan dengan kemampuan Kirana. Makasih banyak kak.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body" style="height: 200px;">
+                            <h5 class="card-title">Muh.Iqbal</h5>
+                            <p class="card-text">Bisa dimengerti dengan mudah saat menjelaskan. Materinya juga cukup mudah dipahami. Selalu menyesuaikan dengan kemampuan siswanya. Senang bisa belajar dengan saem Nisha.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body" style="height: 200px;">
+                            <h5 class="card-title">Chandra Q</h5>
+                            <p class="card-text">Saem Nisha ngajarinya sabar banget bisa menyesuaikan dengan murid muridnya. Materi yang disampaikan mudah dipahami. Saem Nisha juga mudah diajak diskusi hal diluar materi.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="row" style="padding-top:30px; padding-bottom: 30px;">
+                <div class="col-md-12">
+                    <div class="card" >
+                        <h1 class="card-title" style="text-align: center; padding-top: 30px;">Contact From</h1>
+                        <form class="row g-3" style="padding-left:150px;padding-right:150px; padding-top: 10px; padding-bottom: 30px;">
+                            <div class="col-md-6">
+                              <label for="inputNamaDepan" class="form-label">Nama</label>
+                              <input type="text" class="form-control" id="inputNamaDepan">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputsubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="inputsubject">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Pesan</label>
+                              <textarea type="text" class="form-control" id="inputAddress"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 col-4 mx-auto">
+                                <button class="btn btn-primary" type="button">Kirim</button>
+                              </div>
+                            </form>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <div class="container-fluid" style="padding-top:15px; background-color: beige;">
+            <div class="row">
+                <p class="text-center">Copyright@2022</p>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let navbar = document.getElementById('navbar-custom');
+
+        window.addEventListener('scroll', function(){
+            let scroll = window.scrollY;
+
+            if (scroll > 50) {
+                navbar.classList.remove('navbar-dark');
+                navbar.classList.add('bg-light');
+            } else {
+                navbar.classList.add('navbar-dark');
+                navbar.classList.remove('bg-light');
+            }
+        })
+    </script>
+    </body>
+</html>
